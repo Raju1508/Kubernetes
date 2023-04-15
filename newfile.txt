@@ -1,0 +1,22 @@
+Kubernetes lets you create, deploy, manage, and scale application containers across one or more host clusters. 
+
+Environments running Kubernetes consist of the following key components:
+
+Kubernetes control plane—manages Kubernetes clusters and the workloads running on them. Include components like the API Server, Scheduler, and Controller Manager.
+Kubernetes data plane—machines that can run containerized workloads. Each node is managed by the kubelet, an agent that receives commands from the control plane. 
+Pods—pods are the smallest unit provided by Kubernetes to manage containerized workloads.  A pod typically includes several containers, which together form a functional unit or microservice.
+Persistent storage—local storage on Kubernetes nodes is ephemeral, and is deleted when a pod shuts down. This can make it difficult to run stateful applications. Kubernetes provides the Persistent Volumes (PV) mechanism, allowing containerized applications to store data beyond the lifetime of a pod or node.
+This is part of an extensive series of guides about CI/CD.
+In this article, you will learn:
+
+Kubernetes Architecture Overview
+Kubernetes Control Plane
+kube-apiserver
+kube-scheduler
+kube-controller-manager
+etcd
+cloud-controller-manager
+Kubernetes Worker Nodes
+Nodes
+Pods
+Container Runtime Engine
